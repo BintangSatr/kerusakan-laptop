@@ -72,9 +72,16 @@ Bintang Satria – GitHub
 
 MIT License
 
-### ✅ Step 4: Push Final ke GitHub
+---
+
+## 📤 Langkah Selanjutnya:
+
+1. **Buat file `README.md`** di root folder (jika belum ada).
+2. **Copy-paste** seluruh konten di atas ke file tersebut.
+3. **Simpan** (`Ctrl+S`).
+4. **Commit & push ke GitHub**:
 
 ```bash
 git add README.md
-git commit -m "Final: Add README and complete project documentation"
+git commit -m "Add comprehensive README.md"
 git push origin main
