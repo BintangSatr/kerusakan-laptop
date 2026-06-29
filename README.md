@@ -49,7 +49,7 @@ Akses API yang sudah terdeploy di Vercel:
 
 ---
 
-##📊 Metode Diagnosis
+## 📊 Metode Diagnosis
 
 Sistem menggunakan perhitungan CF (Certainty Factor) dengan 3 tahap:
 
@@ -61,10 +61,10 @@ Sistem menggunakan perhitungan CF (Certainty Factor) dengan 3 tahap:
 
 Hasil akhir ditampilkan dalam bentuk persentase (%).
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Bintang Satria – GitHub
 
-##📝 Lisensi
+## 📝 Lisensi
 
 MIT License
 
