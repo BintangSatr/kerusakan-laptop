@@ -61,8 +61,12 @@ Sistem menggunakan perhitungan CF (Certainty Factor) dengan 3 tahap:
 
 Hasil akhir ditampilkan dalam bentuk persentase (%).
 
+---
+
 ## 👨‍💻 Author
 Bintang Satria – GitHub
+
+---
 
 ## 📝 Lisensi
 
