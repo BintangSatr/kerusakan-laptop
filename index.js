@@ -1,12 +1,12 @@
-// index.js (minimal test)
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-    res.json({ message: '🚀 Railway is working!' });
-});
-
-app.listen(PORT, () => {
-    console.log(`✅ Server running on port ${PORT}`);
-});
+// index.js
+try {
+    console.log('🔄 Loading server.js...');
+    require('./server.js');
+    console.log('✅ Server.js loaded successfully');
+} catch (err) {
+    console.error('❌ Failed to load server.js:');
+    console.error('   Name:', err.name);
+    console.error('   Message:', err.message);
+    console.error('   Stack:', err.stack);
+    process.exit(1);
+}
