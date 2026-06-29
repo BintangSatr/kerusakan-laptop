@@ -34,3 +34,26 @@ Akses API yang sudah terdeploy di Vercel:
    ```bash
    git clone https://github.com/BintangSatr/kerusakan-laptop.git
    cd kerusakan-laptop
+2. Install dependencies:
+   ```bash
+   npm install
+3. Buat file .env di root folder, isi dengan:
+   SUPABASE_URL=your-supabase-url
+   SUPABASE_KEY=your-supabase-anon-key
+   JWT_SECRET=your-jwt-secret
+   PORT=3000
+4. Jalankan server:
+   ```bash
+   node server.js
+5. API akan berjalan di http://localhost:3000
+
+📊 Metode Diagnosis
+Sistem menggunakan perhitungan CF (Certainty Factor) dengan 3 tahap:
+
+CF Pakar (nilai dari tabel damage_symptoms dan cf_rule)
+
+CF User (bobot keyakinan user saat menjawab: yes=1.0, probably_yes=0.8, dont_know=0.4, probably_not=0.2, no=0.0)
+
+Kombinasi CF (Shortliffe & Buchanan) → CF_combined = CF_old + CF_new * (1 - CF_old)
+
+Hasil akhir ditampilkan dalam bentuk persentase (%).
